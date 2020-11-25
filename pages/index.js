@@ -13,11 +13,11 @@ export default function Home({allPostsData}) {
       </Head>
       <section className={utilStyles.headingMd}>
 
-        <p>Hello, I'm Weslley. I'm a software engineer and a skater ( During the  free times haha). You can contact me on <a href="#">Instagram</a></p>
+        <p>Hello, I'm Weslley a brazilian guy living in UK. I'm a software engineer and a skater ( During the  free times haha). You can contact me on <a href="https://www.instagram.com/weslleyzera/">Instagram</a></p>
 
-        <p>This page is my first blog using <a href="#">Next.js</a></p>
+        <p>This my first blog using <a href="https://nextjs.org/">Next.js</a></p>
 
-        <h2 className={utilStyles.headingLg}>Blog</h2>
+        <h2 className={utilStyles.headingLg}>Here are some recent done jobs</h2>
 
         <ul className={utilStyles.list}>
           {allPostsData.map(({ id, date, title }) => (
@@ -32,7 +32,7 @@ export default function Home({allPostsData}) {
           </li>
           ))}
         </ul>
-                
+
       </section>
     </Layout>
   )
