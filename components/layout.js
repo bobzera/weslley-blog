@@ -3,8 +3,8 @@ import styles from './layout.module.css'
 import utilStyles from '../styles/utils.module.css'
 import Link from 'next/link'
 
-const name = 'Weslley Oliveira'
-export const siteTitle = 'Weslley Oliveira'
+const name = 'Weslley Oliveira | Web Developer'
+export const siteTitle = 'Web Developer'
 
 export default function Layout({ children, home }) {
   return (
@@ -13,7 +13,7 @@ export default function Layout({ children, home }) {
         <link rel="icon" href="/favicon.ico" />
         <meta
           name="description"
-          content="Hi there! Please enjoy my Blog"
+          content="Ola! Contate-me para um servico atraves do meu website!"
         />
         <meta
           property="og:image"
