@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Layout, { siteTitle } from '../components/layout'
+import Btn from '../components/btn'
 import utilStyles from '../styles/utils.module.css'
 import { getSortedPostsData } from '../lib/posts'
 import Link from 'next/link'
@@ -7,16 +8,25 @@ import Date from '../components/date'
 
 export default function Home({allPostsData}) {
   return (
+    <>
     <Layout home>
       <Head>
         <title>{siteTitle}</title>
       </Head>
       <section className={utilStyles.headingMd}>
+        
+        <p>Meu nome é Weslley Oliveira, trabalho e moro em Londres, sou desenvolvedor Web,
+           faço <strong>landing pages, e-commerce e sites responsivos para web</strong>,
+            com tecnologia usada pelas maiores empresas tais como: <strong>Facebook, Google, Uber e Airbnb.</strong></p>
 
-        <p>Hello, I'm Weslley a brazilian guy living in UK. I'm a software engineer and a skater ( During the  free times haha). You can contact me on <a href="https://www.instagram.com/weslley.0liveira/">Instagram</a></p>
+        <p>Site rápido e que não cai independente do números de usuário online!</p> 
 
-        <h2 className={utilStyles.headingLg}>Here are some recent done jobs</h2>
+        <h2 className={utilStyles.headingLg}>Contate-me através dos links abaixo, vamos trabalhar juntos nos seus projetos.</h2>
 
+        <Btn contente><Link href="https://www.instagram.com/weslleyoliveirapro/"><strong>Instagram</strong></Link></Btn>
+
+        <Btn contente><Link href="https://api.whatsapp.com/send?phone=4407756118628&text=Ola%20eu%20gostaria%20de%20saber%20mais"><strong>Whatsapp</strong></Link></Btn>
+{/*         
         <ul className={utilStyles.list}>
           {allPostsData.map(({ id, date, title }) => (
             <li className={utilStyles.listItem} key={id}>
@@ -29,10 +39,13 @@ export default function Home({allPostsData}) {
             </small>
           </li>
           ))}
-        </ul>
+        </ul> */}
 
       </section>
     </Layout>
+    
+    <footer className={utilStyles.footer}><p>Copyright © 2020. Weslley Oliveira. Todos direitos reservados</p></footer>
+    </>
   )
 }
 
