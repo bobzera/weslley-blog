@@ -2,4 +2,4 @@
 
 ## need to do 
 
-[ ] change favicon.ico
+[] change favicon.ico
