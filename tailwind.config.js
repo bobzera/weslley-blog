@@ -7,7 +7,7 @@ module.exports = {
         transparent: 'transparent',
         current: 'currentColor',
         black: {
-          light: '#85d7ff',
+          light: '#202024',
           DEFAULT: '#121214',
           dark: '#009eeb',
         },
@@ -40,7 +40,9 @@ module.exports = {
     },
   },
   variants: {
-    extend: {},
+    extend: {
+      backgroundColor: ['active'],
+    },
   },
   plugins: [],
 }

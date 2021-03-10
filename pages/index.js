@@ -1,5 +1,6 @@
 import Nav from '../components/nav';
-import Link from 'next/link'
+import Btn from '../components/Btn'
+import WhoIm from '../components/WhoIm';
 
 export default function Home(){
     return(        
@@ -11,12 +12,23 @@ export default function Home(){
                     <h2 className="text-gray-text py-4 leading-relaxed">Desenvolvimento de sites e aplicações web/mobile seguras, responsivas, de boa navegabilidade, design atrativo e Mobile Friendly</h2>
                 </div>
                 <img className="w-60 sm:w-96" src="https://josepholiveira.dev/_next/static/images/presentation-programmer-c7fa23b9eb3a27b094a594ff5a5ad7e5.svg"/>
-                <Link href="https://github.com/weslley-oliveira">
-                    <button className="rounded mx-auto my-8 py-4 bg-purple text-opacity-80 text-white w-full border-b-4 border-purple-600">
-                        <span className="text-2xl pr-2 opacity-80"><i class="fa fa-github" aria-hidden="true"></i> </span>
-                        Ver Projetos
-                    </button>
-                </Link>
+                <Btn 
+                text="Ver Projetos"
+                href="https://github.com/weslley-oliveira"
+                icon="fa fa-github"
+                />
+            </div>
+            <div className="py-20">
+                <span className="text-green font-black text-4xl">__</span>
+                <h1 className="text-2xl font-bold text-gray-title py-4">Quem sou eu</h1>                               
+                <h2 className="text-gray-text pb-4 leading-relaxed">Entusiasta das melhores tecnologias de desenvolvimento web e mobile.</h2>
+                <WhoIm/>
+            </div>                
+            <div className="py-20">
+                <span className="text-green font-black text-4xl">__</span>
+                <h1 className="text-2xl font-bold text-gray-title py-4">Confira alguns dos projetos desenvolvidos</h1>                               
+                <h2 className="text-gray-text pb-4 leading-relaxed">Entusiasta das melhores tecnologias de desenvolvimento web e mobile.</h2>
+                <WhoIm/>
             </div>                
         </div>        
     )
