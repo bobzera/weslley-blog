@@ -1,6 +1,7 @@
 import Nav from '../components/nav';
 import Btn from '../components/Btn'
 import WhoIm from '../components/WhoIm';
+import Project from '../components/Project';
 
 export default function Home(){
     return(        
@@ -28,7 +29,7 @@ export default function Home(){
                 <span className="text-green font-black text-4xl">__</span>
                 <h1 className="text-2xl font-bold text-gray-title py-4">Confira alguns dos projetos desenvolvidos</h1>                               
                 <h2 className="text-gray-text pb-4 leading-relaxed">Entusiasta das melhores tecnologias de desenvolvimento web e mobile.</h2>
-                <WhoIm/>
+                <Project/>
             </div>                
         </div>        
     )
