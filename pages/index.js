@@ -1,77 +1,23 @@
-import Head from 'next/head'
-import Layout, { siteTitle } from '../components/layout'
-import Btn from '../components/btn'
-import utilStyles from '../styles/utils.module.css'
-import { getSortedPostsData } from '../lib/posts'
+import Nav from '../components/nav';
 import Link from 'next/link'
-import Image from 'next/image'
-import Whatsapp from '../components/whatsapp'
 
-export default function Home({allPostsData}) {
-  return (
-    <>
-    <Layout home>
-      <Head>
-        <title>{siteTitle}</title>
-      </Head>
-      <section className={utilStyles.headingMd}>
-        
-        <p>Ola! Sejam bem vindos!!! <br></br> Trabalho e moro em Londres, sou desenvolvedor Web 👨‍💻
-           faço <strong>landing pages</strong>, <strong>e-commerce</strong> e <strong>aplicativos</strong> responsivos para web,
-            com as mesmas ferramentas e linguagens usadas por grandes empresas de tecnologia 🚀 <strong>Facebook, Google, Uber e Airbnb😲</strong></p>
-
-        <h2 className={utilStyles.headingLg}>Contate-me através dos links abaixo, vamos trabalhar juntos nos seus projetos.</h2>
-
-        <Btn>
-          <Link  href="https://www.instagram.com/weslleyoliveirapro/">
-              <Image  className={utilStyles.instagram}
-                src="/images/instagram.png"
-                alt="Picture of the author"
-                width={180}
-                height={50}
-              />
-          </Link>
-        </Btn>
-
-        {/* <Btn>
-          <Link href="https://api.whatsapp.com/send?phone=4407756118628&text=Ola%20eu%20gostaria%20de%20saber%20mais">
-            <Image  className={utilStyles.instagram}
-                  src="/images/whatsapp.png"
-                  alt="Picture of the author"
-                  width={180}
-                  height={50}
-                />
-                <strong>Whatsapp</strong>
-          </Link></Btn> */}
-{/*         
-        <ul className={utilStyles.list}>
-          {allPostsData.map(({ id, date, title }) => (
-            <li className={utilStyles.listItem} key={id}>
-            <Link href={`/posts/${id}`}>
-              <a>{title}</a>
-            </Link>
-            <br />
-            <small className={utilStyles.lightText}>
-              <Date dateString={date} />
-            </small>
-          </li>
-          ))}
-        </ul> */}
-
-      </section>
-    </Layout>
-    <Whatsapp></Whatsapp>
-    <footer className={utilStyles.footer}><p>Copyright © 2020. Weslley Oliveira. Todos direitos reservados</p></footer>
-    </>
-  )
+export default function Home(){
+    return(        
+        <div className="container sn:mx-auto px-6">
+            <Nav/>
+            <div className="flex flex-col justify-between h-screen items-center py-16">
+                <div>
+                    <h1 className="text-3xl font-bold text-gray-title">Chegou a hora de alavancar suas vendas na internet <span className="text-green ">!</span></h1>
+                    <h2 className="text-gray-text py-4 leading-relaxed">Desenvolvimento de sites e aplicações web/mobile seguras, responsivas, de boa navegabilidade, design atrativo e Mobile Friendly</h2>
+                </div>
+                <img className="w-60 sm:w-96" src="https://josepholiveira.dev/_next/static/images/presentation-programmer-c7fa23b9eb3a27b094a594ff5a5ad7e5.svg"/>
+                <Link href="https://github.com/weslley-oliveira">
+                    <button className="rounded mx-auto my-8 py-4 bg-purple text-opacity-80 text-white w-full border-b-4 border-purple-600">
+                        <span className="text-2xl pr-2 opacity-80"><i class="fa fa-github" aria-hidden="true"></i> </span>
+                        Ver Projetos
+                    </button>
+                </Link>
+            </div>                
+        </div>        
+    )
 }
-
-export async function getStaticProps() {
-  const allPostsData = getSortedPostsData()
-  return {
-    props: {
-      allPostsData
-    }
-  }
-}
-
