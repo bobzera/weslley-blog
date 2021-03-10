@@ -12,7 +12,10 @@ export default function Home(){
                 </div>
                 <img className="w-60 sm:w-96" src="https://josepholiveira.dev/_next/static/images/presentation-programmer-c7fa23b9eb3a27b094a594ff5a5ad7e5.svg"/>
                 <Link href="https://github.com/weslley-oliveira">
-                    <button className="px-16 rounded mx-auto my-8 py-4 bg-purple text-white w-full border-b-4 border-purple-600">Iniciar um projeto</button>
+                    <button className="rounded mx-auto my-8 py-4 bg-purple text-opacity-80 text-white w-full border-b-4 border-purple-600">
+                        <span className="text-2xl pr-2 opacity-80"><i class="fa fa-github" aria-hidden="true"></i> </span>
+                        Ver Projetos
+                    </button>
                 </Link>
             </div>                
         </div>        
