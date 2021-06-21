@@ -29,7 +29,40 @@ export default function Home(){
                 <span className="text-green font-black text-4xl">__</span>
                 <h1 className="text-2xl font-bold text-gray-title py-4">Confira alguns dos projetos desenvolvidos</h1>                               
                 <h2 className="text-gray-text pb-4 leading-relaxed">Entusiasta das melhores tecnologias de desenvolvimento web e mobile.</h2>
-                <Project/>
+                <Project 
+                    name="Move.It"
+                    img="https://raw.githubusercontent.com/weslley-oliveira/moveit-next-nlw/39f97b68579e02c5e4280d54a03d637c4304114a/.github/moveit.svg"
+                    link="https://moveit-weslley-oliveira.vercel.app/"
+                    describe="Exercitation culpa aliquip dolore do voluptate eu 
+                    non aute cillum sint nisi do esse et. Quis aute excepteur magna 
+                    labore voluptate tempor ex deserunt. Magna sit laborum cillum 
+                    adipisicing magna. Nulla ut aute aliqua fugiat ut laborum labore 
+                    sunt ad nulla pariatur cupidatat. Nostrud ex ad velit est sit duis in ut. 
+                    Dolor dolor exercitation sit et enim est ex elit consequat eu."
+                >
+                    <img src="/icon/nextjs.svg" alt="Next Js"/>
+                    <img src="/icon/reactjs.svg"/>
+                    <img src="/icon/html5.svg"/>
+                    <img src="/icon/css3.svg"/>
+                    <img src="/icon/typescript.svg"/>
+                </Project>
+                <Project 
+                    name="On/Off"
+                    img="https://raw.githubusercontent.com/weslley-oliveira/OnOff/013c00c6398b90a272adc8a34d381969aba0a635/.github/onOff.svg"
+                    link="https://on-off.vercel.app/"
+                    describe="Exercitation culpa aliquip dolore do voluptate eu 
+                    non aute cillum sint nisi do esse et. Quis aute excepteur magna 
+                    labore voluptate tempor ex deserunt. Magna sit laborum cillum 
+                    adipisicing magna. Nulla ut aute aliqua fugiat ut laborum labore 
+                    sunt ad nulla pariatur cupidatat. Nostrud ex ad velit est sit duis in ut. 
+                    Dolor dolor exercitation sit et enim est ex elit consequat eu."
+                >
+                    <img src="/icon/nextjs.svg" alt="Next Js"/>
+                    <img src="/icon/reactjs.svg"/>
+                    <img src="/icon/html5.svg"/>
+                    <img src="/icon/css3.svg"/>
+                    <img src="/icon/typescript.svg"/>
+                </Project>
             </div>                
         </div>        
     )
